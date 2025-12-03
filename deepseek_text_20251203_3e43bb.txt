@@ -1,0 +1,70 @@
+varsityhub/
+├── backend/
+│   ├── src/
+│   │   ├── _core/
+│   │   │   ├── auth.ts          # JWT authentication
+│   │   │   ├── env.ts           # Environment validation
+│   │   │   ├── trpc.ts          # tRPC setup
+│   │   │   └── middleware.ts    # Rate limiting, CORS, etc.
+│   │   ├── db/
+│   │   │   ├── schema.ts        # Drizzle schema
+│   │   │   ├── migrations/      # Auto-generated
+│   │   │   └── seed.ts          # Test data
+│   │   ├── routers/
+│   │   │   ├── _app.ts          # Root router
+│   │   │   ├── marketplace.ts   # Marketplace CRUD
+│   │   │   ├── messaging.ts     # Real-time messaging
+│   │   │   ├── profile.ts       # User profiles
+│   │   │   ├── events.ts        # Events management
+│   │   │   ├── forum.ts         # Forum posts
+│   │   │   ├── career.ts        # Job listings
+│   │   │   ├── studyhub.ts      # Study resources
+│   │   │   ├── lostfound.ts     # Lost & found
+│   │   │   ├── music.ts         # Music features
+│   │   │   ├── admin.ts         # Admin dashboard
+│   │   │   ├── aiSearch.ts      # AI assistant
+│   │   │   └── payments.ts      # Paystack integration
+│   │   ├── realtime/
+│   │   │   ├── websocket.ts     # WebSocket server
+│   │   │   └── notifications.ts # Push notifications
+│   │   └── index.ts             # Express server
+│   ├── package.json
+│   ├── tsconfig.json
+│   ├── drizzle.config.ts
+│   └── .env.example
+├── frontend/
+│   ├── src/
+│   │   ├── app/                 # Next.js 14 App Router
+│   │   │   ├── (auth)/         # Auth routes
+│   │   │   ├── (dashboard)/    # Protected routes
+│   │   │   ├── api/            # Edge API routes
+│   │   │   └── layout.tsx
+│   │   ├── components/
+│   │   │   ├── ui/             # ShadCN components
+│   │   │   ├── features/       # Feature components
+│   │   │   └── layout/         # Layout components
+│   │   ├── features/
+│   │   │   ├── marketplace/
+│   │   │   ├── messaging/
+│   │   │   ├── music/
+│   │   │   ├── lostfound/
+│   │   │   ├── campusmap/
+│   │   │   ├── career/
+│   │   │   ├── studyhub/
+│   │   │   ├── events/
+│   │   │   └── forum/
+│   │   ├── hooks/
+│   │   ├── lib/
+│   │   │   ├── trpc/           # tRPC client
+│   │   │   ├── db/             # Database client
+│   │   │   └── utils/          # Utilities
+│   │   ├── styles/
+│   │   └── types/
+│   ├── package.json
+│   ├── tailwind.config.ts
+│   ├── components.json
+│   └── next.config.js
+├── docker-compose.yml
+├── Dockerfile
+├── README.md
+└── package.json (root - monorepo)
